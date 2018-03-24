@@ -25,7 +25,7 @@
             tools:style="@style/MSStepTabNumber"
             tools:text="1" />
 
-        <ImageView
+        <android.support.v7.widget.AppCompatImageView
             android:id="@+id/ms_stepDoneIndicator"
             style="?attr/ms_stepTabDoneIndicatorStyle"
             android:visibility="gone"

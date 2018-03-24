@@ -141,7 +141,7 @@ public class StepTab extends RelativeLayout {
 
         Typeface typeface = mStepTitleTextView.getTypeface();
         mNormalTypeface = Typeface.create(typeface, Typeface.NORMAL);
-        mBoldTypeface = Typeface.create(typeface, Typeface.BOLD);
+        mBoldTypeface = Typeface.create(typeface, Typeface.NORMAL);
         Drawable avd = createCircleToWarningDrawable();
         mStepIconBackground.setImageDrawable(avd);
     }
