@@ -41,6 +41,8 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/ms_iconContainer"
         android:layout_toRightOf="@+id/ms_iconContainer"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:orientation="vertical">
 
         <TextView

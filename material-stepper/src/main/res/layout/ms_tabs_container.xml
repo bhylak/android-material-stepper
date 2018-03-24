@@ -9,7 +9,7 @@
     <HorizontalScrollView
         android:id="@+id/ms_stepTabsScrollView"
         style="?attr/ms_stepTabsScrollViewStyle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
         tools:style="@style/MSStepTabsScrollView">
@@ -21,8 +21,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             tools:style="@style/MSStepTabsInnerContainer" />
-
-
     </HorizontalScrollView>
 
     <TextView
