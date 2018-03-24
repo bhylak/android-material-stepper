@@ -176,6 +176,10 @@ public class TabsContainer extends FrameLayout {
         view.setErrorColor(mErrorColor);
         view.setDividerWidth(mDividerWidth);
 
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) view.getLayoutParams();
+        params.weight=1;
+        view.setLayoutParams(params);
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
