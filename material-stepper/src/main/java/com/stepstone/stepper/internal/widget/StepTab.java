@@ -28,6 +28,7 @@ import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.support.annotation.RestrictTo;
 import android.support.annotation.VisibleForTesting;
+import android.support.constraint.ConstraintLayout;
 import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
@@ -37,7 +38,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.stepstone.stepper.R;
@@ -51,7 +51,7 @@ import static android.support.annotation.RestrictTo.Scope.LIBRARY;
  * A widget for a single tab in the {@link TabsContainer}.
  */
 @RestrictTo(LIBRARY)
-public class StepTab extends RelativeLayout {
+public class StepTab extends ConstraintLayout {
 
     private static final float ALPHA_TRANSPARENT = 0.0f;
 

@@ -32,7 +32,7 @@ class SampleStepAdapter(context: Context) : AbstractStepAdapter(context) {
     }
 
     override fun getCount(): Int {
-        return 3
+        return 5
     }
 
     override fun findStep(position: Int): Step? {

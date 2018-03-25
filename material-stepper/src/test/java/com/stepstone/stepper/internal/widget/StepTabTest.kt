@@ -43,7 +43,6 @@ class StepTabTest {
     @Test
     fun `Should create a default tab in inactive state`() {
         assertTab()
-                .isNotNull
                 .isInState(StepTab.InactiveNumberState::class.java)
                 .isSubtitleHidden()
     }

@@ -27,11 +27,13 @@ class SampleFragmentStepAdapter(fm: FragmentManager, context: Context) : Abstrac
             0 -> return StepFragmentSample.newInstance(R.layout.fragment_step)
             1 -> return StepFragmentSample.newInstance(R.layout.fragment_step2)
             2 -> return StepFragmentSample.newInstance(R.layout.fragment_step3)
+            3 -> return StepFragmentSample.newInstance(R.layout.fragment_step3)
+            4 -> return StepFragmentSample.newInstance(R.layout.fragment_step3)
             else -> throw IllegalArgumentException("Unsupported position: " + position)
         }
     }
 
     override fun getCount(): Int {
-        return 3
+        return 5
     }
 }

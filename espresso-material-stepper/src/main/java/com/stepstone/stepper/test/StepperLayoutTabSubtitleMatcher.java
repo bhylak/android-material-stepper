@@ -2,6 +2,7 @@ package com.stepstone.stepper.test;
 
 import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.test.espresso.matcher.BoundedMatcher;
 import android.util.Log;
 import android.view.View;
@@ -46,7 +47,7 @@ public class StepperLayoutTabSubtitleMatcher extends BoundedMatcher<View, Steppe
 
     @Override
     protected boolean matchesSafely(StepperLayout view) {
-        ViewGroup tabsContainer = (ViewGroup) view.findViewById(com.stepstone.stepper.R.id.ms_stepTabsInnerContainer);
+        ConstraintLayout tabsContainer = (ConstraintLayout)view.findViewById(com.stepstone.stepper.R.id.ms_stepTabsInnerContainer);
         int childCount = tabsContainer.getChildCount();
 
         if (childCount == 0) {

@@ -2,12 +2,12 @@ package com.stepstone.stepper.internal.widget
 
 import android.widget.TextView
 import com.stepstone.stepper.R
-import org.assertj.android.api.widget.AbstractRelativeLayoutAssert
+import org.assertj.android.api.Assertions.*;
 
 /**
  * @author Piotr Zawadzki
  */
-class StepTabAssert constructor(actual: StepTab) : AbstractRelativeLayoutAssert<StepTabAssert, StepTab>(actual, StepTabAssert::class.java) {
+class StepTabAssert constructor(val actual: StepTab){
 
     companion object {
 

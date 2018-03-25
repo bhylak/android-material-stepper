@@ -12,12 +12,15 @@ android {
 
     lintOptions {
         warningsAsErrors true
+        disable 'InvalidPackage'
     }
 }
 
 dependencies {
     api project(':material-stepper')
     api "com.android.support.test.espresso:espresso-core:$espressoVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
 }
 
 gradle.taskGraph.beforeTask { Task task ->
